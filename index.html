@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shock Thermique - Prise de Rendez-vous</title>
+  <title>Shock Thermique - Services de Chauffage, Plomberie & Dépannage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- En-tête -->
   <header>
     <h1>Shock Thermique</h1>
     <nav>
@@ -18,19 +19,33 @@
     </nav>
   </header>
 
+  <!-- Section principale -->
   <main>
+    <!-- Services -->
     <section id="services">
       <h2>Nos Services</h2>
-      <p>Nous proposons des solutions thermiques innovantes adaptées à vos besoins.</p>
-      <ul>
-        <li>Diagnostic thermique</li>
-        <li>Solutions de traitement thermique</li>
-        <li>Maintenance préventive et réparation</li>
-      </ul>
+      <div class="service-container">
+        <div class="service">
+          <img src="https://source.unsplash.com/600x400/?heating" alt="Service chauffage">
+          <h3>Chauffage</h3>
+          <p>Installation, maintenance et réparation de vos systèmes de chauffage pour un confort optimal.</p>
+        </div>
+        <div class="service">
+          <img src="https://source.unsplash.com/600x400/?plumbing" alt="Service plomberie">
+          <h3>Plomberie</h3>
+          <p>Interventions rapides pour vos problèmes de plomberie avec efficacité et professionnalisme.</p>
+        </div>
+        <div class="service">
+          <img src="https://source.unsplash.com/600x400/?maintenance" alt="Service maintenance">
+          <h3>Dépannage & Maintenance</h3>
+          <p>Assurez la longévité de vos installations avec notre service de dépannage et maintenance réactive.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Formulaire de rendez-vous -->
     <section id="rendez-vous">
-      <h2>Prendre un Rendez-vous</h2>
+      <h2>Planifiez Votre Rendez-vous</h2>
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label for="name">Votre nom :</label>
         <input type="text" id="name" name="name" required>
@@ -41,13 +56,14 @@
         <label for="date">Date souhaitée :</label>
         <input type="date" id="date" name="date" required>
         
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" placeholder="Décrivez vos besoins" required></textarea>
+        <label for="message">Votre besoin :</label>
+        <textarea id="message" name="message" placeholder="Précisez votre problème" required></textarea>
         
         <button type="submit">Envoyer</button>
       </form>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email : <a href="mailto:shockthermique@orange.fr">shockthermique@orange.fr</a></p>
@@ -55,6 +71,7 @@
     </section>
   </main>
 
+  <!-- Pied de page -->
   <footer>
     <p>&copy; 2024 Shock Thermique - Tous droits réservés</p>
   </footer>
