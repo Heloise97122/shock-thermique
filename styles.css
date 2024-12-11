@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #222;
     color: #fff;
     padding: 1rem 0;
 }
@@ -52,12 +52,9 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-section {
-    padding: 2rem 0;
-}
-
 .services-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -68,7 +65,7 @@ section {
 }
 
 footer {
-    background: #333;
+    background: #222;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
