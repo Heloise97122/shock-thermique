@@ -1,11 +1,11 @@
-/* Réinitialisation de base */
+/* Réinitialisation */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Style Général */
+/* Styles globaux */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -13,7 +13,7 @@ body {
 
 /* En-tête */
 header {
-  background: #333;
+  background-color: #004080;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -23,11 +23,8 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 15px;
   margin: 10px 0;
-}
-
-header nav ul li {
-  margin: 0 10px;
 }
 
 header nav ul li a {
@@ -35,30 +32,45 @@ header nav ul li a {
   text-decoration: none;
 }
 
-/* Contenu principal */
+/* Section principale */
 main {
   padding: 20px;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h2 {
   margin-bottom: 10px;
-  color: #333;
+  color: #004080;
 }
 
-/* Formulaire de rendez-vous */
+/* Services */
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Formulaire */
 form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: auto;
-}
-
-form label {
-  margin: 5px 0;
 }
 
 form input,
@@ -70,24 +82,23 @@ form textarea {
 }
 
 form button {
-  margin-top: 10px;
-  padding: 10px;
-  background: #333;
+  background: #004080;
   color: #fff;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 form button:hover {
-  background: #555;
+  background: #00264d;
 }
 
 /* Pied de page */
 footer {
+  background-color: #004080;
+  color: #fff;
   text-align: center;
   padding: 10px 0;
-  background: #333;
-  color: #fff;
-  margin-top: 20px;
 }
