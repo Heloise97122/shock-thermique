@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shock Thermique - Services de Chauffage, Plomberie & Dépannage</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shock Thermique - Plomberie & Chauffage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- En-tête -->
-  <header>
-    <h1>Shock Thermique</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Nos Services</a></li>
-        <li><a href="#rendez-vous">Prendre Rendez-vous</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Section principale -->
-  <main>
-    <!-- Services -->
-    <section id="services">
-      <h2>Nos Services</h2>
-      <div class="service-container">
-        <div class="service">
-          <img src="https://source.unsplash.com/600x400/?heating" alt="Service chauffage">
-          <h3>Chauffage</h3>
-          <p>Installation, maintenance et réparation de vos systèmes de chauffage pour un confort optimal.</p>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Shock Thermique</a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert en Plomberie et Chauffage</h1>
+            <p>Installation, réparation, et maintenance de systèmes de plomberie et chauffage.</p>
         </div>
-        <div class="service">
-          <img src="https://source.unsplash.com/600x400/?plumbing" alt="Service plomberie">
-          <h3>Plomberie</h3>
-          <p>Interventions rapides pour vos problèmes de plomberie avec efficacité et professionnalisme.</p>
-        </div>
-        <div class="service">
-          <img src="https://source.unsplash.com/600x400/?maintenance" alt="Service maintenance">
-          <h3>Dépannage & Maintenance</h3>
-          <p>Assurez la longévité de vos installations avec notre service de dépannage et maintenance réactive.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Formulaire de rendez-vous -->
-    <section id="rendez-vous">
-      <h2>Planifiez Votre Rendez-vous</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label for="name">Votre nom :</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Votre email :</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="date">Date souhaitée :</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="message">Votre besoin :</label>
-        <textarea id="message" name="message" placeholder="Précisez votre problème" required></textarea>
-        
-        <button type="submit">Envoyer</button>
-      </form>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Nos Services</h2>
+
+            <div class="service-card">
+                <img src="images/plumbing.jpg" alt="Plomberie">
+                <h3>Plomberie</h3>
+                <p>Installation et réparation de systèmes de plomberie.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/heating.jpg" alt="Chauffage">
+                <h3>Chauffage</h3>
+                <p>Installation et entretien de systèmes de chauffage.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/air-conditioning.jpg" alt="Climatisation">
+                <h3>Climatisation</h3>
+                <p>Installation et maintenance de systèmes de climatisation.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email : <a href="mailto:shockthermique@orange.fr">shockthermique@orange.fr</a></p>
-      <p>Téléphone : <a href="tel:+3332977274">06 32 97 72 74</a></p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>À propos de Shock Thermique</h2>
+            <p>Chez Shock Thermique, nous mettons à votre disposition notre expertise en plomberie et en chauffage. Forts d'années d'expérience, nous proposons des solutions sur mesure adaptées à vos besoins. Faites confiance à nos techniciens qualifiés pour garantir un service de qualité et un travail soigné.</p>
+        </div>
     </section>
-  </main>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2024 Shock Thermique - Tous droits réservés</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shock Thermique. Tous droits réservés.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
