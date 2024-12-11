@@ -3,85 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shock Thermique - Plomberie & Chauffage</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Site vitrine de Shock Thermique">
+    <title>Shock Thermique</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Shock Thermique</a>
-                <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
+        <div class="container">
+            <h1>Shock Thermique</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
                     <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Expert en Plomberie et Chauffage</h1>
-            <p>Installation, réparation, et maintenance de systèmes de plomberie et chauffage.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>Nos Services</h2>
-
-            <div class="service-card">
-                <img src="images/plumbing.jpg" alt="Plomberie">
-                <h3>Plomberie</h3>
-                <p>Installation et réparation de systèmes de plomberie.</p>
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2>Votre partenaire en solutions thermiques</h2>
+                <p>Découvrez nos solutions technologiques avancées pour répondre à vos besoins industriels.</p>
+                <a href="#services" class="btn">Nos Services</a>
             </div>
+        </section>
 
-            <div class="service-card">
-                <img src="images/heating.jpg" alt="Chauffage">
-                <h3>Chauffage</h3>
-                <p>Installation et entretien de systèmes de chauffage.</p>
+        <section id="about">
+            <div class="container">
+                <h2>À propos de nous</h2>
+                <p>Shock Thermique est une entreprise spécialisée dans les solutions thermiques innovantes. Notre objectif est de fournir des produits de haute qualité qui répondent aux besoins spécifiques de nos clients.</p>
             </div>
+        </section>
 
-            <div class="service-card">
-                <img src="images/air-conditioning.jpg" alt="Climatisation">
-                <h3>Climatisation</h3>
-                <p>Installation et maintenance de systèmes de climatisation.</p>
+        <section id="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <h3>Analyse Thermique</h3>
+                        <p>Solutions personnalisées pour l’analyse et la gestion thermique.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Produits sur mesure</h3>
+                        <p>Développement de produits répondant aux spécifications client.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Support Technique</h3>
+                        <p>Assistance continue pour optimiser vos performances thermiques.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>À propos de Shock Thermique</h2>
-            <p>Chez Shock Thermique, nous mettons à votre disposition notre expertise en plomberie et en chauffage. Forts d'années d'expérience, nous proposons des solutions sur mesure adaptées à vos besoins. Faites confiance à nos techniciens qualifiés pour garantir un service de qualité et un travail soigné.</p>
-        </div>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <form action="https://formspree.io/f/example" method="POST">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contactez-nous</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Shock Thermique. Tous droits réservés.</p>
         </div>
     </footer>
-
 </body>
 </html>
